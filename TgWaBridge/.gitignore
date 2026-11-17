@@ -1,0 +1,31 @@
+# ---- secrets: never commit ----
+.env
+.env.local
+
+# ---- session state: per-machine logins, never commit ----
+wa-auth/
+.wwebjs_auth/
+.wwebjs_cache/
+*.session
+*.session-journal
+
+# ---- dependencies ----
+node_modules/
+package-lock.json
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# ---- runtime logs ----
+*.log
+
+# ---- bundled chromium if ever placed locally ----
+chromium/
+
+# ---- os / editor ----
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/
